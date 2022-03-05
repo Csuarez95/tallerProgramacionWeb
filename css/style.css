@@ -1,0 +1,35 @@
+/*Fondo de la página Web*/
+body{
+    width: 1024px;
+    margin: 0px auto;
+    background-color: silver;
+}
+section{
+    border: 1px solid black;
+    box-shadow: 3px 5px 10px black;
+}
+
+/* Borde de la imagen */
+.fondoImagen {
+    border: 10px solid black;
+    border-radius: 10px;
+    box-shadow: 6px 10px 10px black;
+}
+
+/*Animación hipervínculos*/
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    border: 50px;
+    background-color: black;
+    transition: background-color .5s;
+}
+a:hover{
+    color: black;
+    border: 10px;
+    background-color: whitesmoke;
+    font-size: 150%;
+}
+a:active{
+    background-color: lightskyblue;
+}
