@@ -7,15 +7,19 @@
     <title>Hoja de vida</title>
     <meta name = "description" content="Muestra de información inicial de la hoja de vida">
     <link rel="stylesheet" href="css/style.css" />
-
+    <script src="js/JavaScript.js"></script>
 </head>
-<body>
+<body id="cuerpo">
     <header>
         <h1 style="text-align: center;"><i>Hoja de vida</i></h1>
         <figure style="text-align: center;">
             <img src="img/Foto.PNG" alt="Foto par ala hoja de vida" class="fondoImagen">
         </figure>
-        
+        <select id="slcOpciones" onchange="cambiarFondo(this)">
+            <option value="silver">Tema 1</option>
+            <option value="blueviolet">Tema 2</option>
+            <option value="chartreuse">Tema 3</option>
+        </select>
     </header>
 
     <main>

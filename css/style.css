@@ -4,6 +4,7 @@ body{
     margin: 0px auto;
     background-color: silver;
 }
+
 section{
     border: 1px solid black;
     box-shadow: 3px 5px 10px black;
@@ -33,3 +34,49 @@ a:hover{
 a:active{
     background-color: lightskyblue;
 }
+
+/*Estillos Acordeon */
+.mainContainer{
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.btnItem{
+    background-color: steelblue;
+    display: block;
+    color: snow;
+    border-bottom: 3px solid black;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.itemContent{
+    background-color: darksalmon;
+    overflow: hidden;
+    max-height: 0px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.active + .itemContent{
+    max-height: 1000px;
+    padding: 10px;
+    opacity: 1;
+}
+
+.btnItem.active{
+    background-color: orange;
+}
+
+.btnItem:after{
+    content: '\22C1';
+    float: right;
+}
+
+.btnItem.active:after{
+    content: '\22C0';
+    float: right;
+}
+
+
